@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    .input_field, #my-form, #my-table{
+      height: 4rem;
+       
+    }
+    .input_field input::placeholder ,tr{
+  font-size: 26px; /* Placeholder font büyüklüğünü ayarlayın */
+}
+
+
+.input_field button {
+  font-size: 22px; /* Buton metni font büyüklüğünü ayarlayın */
+}
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="container p-5 bg-black text-white">
+        <h1>Custom Fields</h1>
+        <div class="input-group mb-3 mt-4 input_field">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Creat Your Table"
+      
+            
+          />
+
+          <button
+            class="btn btn-outline-primary bg-white text-primary"
+            type="button"
+            id="create-btn"
+          >
+            Create Field
+          </button>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- yeni input ve form alani -->
+
+      <form action="" id="my-form" class="d-flex gap-2">
+        <!-- 
+js de olusturulacak . Alttaki input alanlari-->
+      </form>
+
+      <hr />
+
+      <!-- table -->
+
+      <table class="table table-bordered" id="my-table">
+        <thead>
+          <tr>
+            <!-- th lar js de olsuturulacak -->
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- js de olusturulacak -->
+        </tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
